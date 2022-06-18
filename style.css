@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: hsl(192, 100%, 9%);
+  font-size: 1.2em;
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 15px 60px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1000px;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+
+  align-items: center;
+}
+.flex > div,
+.flex > ul {
+  flex: 1;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+header {
+  background-image: url("./images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+  padding: 40px 0;
+  background-color: hsl(193, 100%, 96%);
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.header-image{
+    margin-left: 40px;
+    width: 80% 
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 40px 0;
+  padding: 60px;
+}
+
+.small-box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: -50px;
+  z-index: 1;
+}
+
+.box img {
+  width: 80%;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  padding: 180px 0 60px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+  
+  .flex {
+    flex-direction: column;
+  }
+  .flex {
+    flex-direction: row;
+  }
+  .box-reverse-mobile {
+    flex-direction: column;
+  }
+
+  footer ul {
+    padding: 0;
+    width: 100%;
+  }
+  .header-image {
+    margin-top: 30px;
+  }
+}
